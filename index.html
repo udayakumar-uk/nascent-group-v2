@@ -10,6 +10,7 @@
 
 	<!-- STYLES -->
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,20 +24,20 @@
   <header>
     <nav class="navbar fixed-top border-bottom bg-white">
       <div class="container-fluid flex-nowrap">
-        <div class="header--contact m-0 d-none d-sm-block">
-            <a href="https://www.linkedin.com/company/nascent-management-and-advisory" target="_blank" class="p-2 fs-5"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="mailto:daniel@nascentgroup.bm" class="p-2 fs-5"><i class="fa-solid fa-envelope"></i></a>
+        <div class="header--contact m-0 d-none d-sm-block" style="width: 200px;">
+          <a href="https://www.linkedin.com/company/nascent-management-and-advisory" class="p-2 fs-5" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:daniel@nascentgroup.bm" class="p-2 fs-5"><i class="fa-solid fa-envelope"></i></a>
         </div>
         <div class="header--logo mx-sm-auto">
             <a href="./" class="navbar-brand"><img src="./img/nascent-group-logo.webp" alt="nascent-group-logo" width="300" /></a>
         </div>
         
-        <!-- <div class="navbar-expand-lg navbar-expand-lg d-none d-lg-block">
+        <div class="navbar-expand-lg navbar-expand-lg d-none d-lg-block">
           <ul class="navbar-nav pe-3">
             <li class="nav-item"><a class="nav-link" href="./about-us.html">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Reinsurance Solutions</a></li>
+            <li class="nav-item"><a class="nav-link" href="./nascent.html">Reinsurance Solutions</a></li>
           </ul>
-        </div> -->
+        </div>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-line"></span>
           <span class="navbar-line"></span>
@@ -52,9 +53,9 @@
               <li class="nav-item"><a class="nav-link active" aria-current="page" href="./">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="./insurance-management.html">Insurance Management</a></li>
               <li class="nav-item"><a class="nav-link" href="./advisory-services.html">Advisory Services</a></li>
-              <li class="nav-item"><a class="nav-link" href="./insurance-management.html">Nascent Reinsurance</a></li>
-              <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="./nascent.html">Nascent Re</a></li>
+              <li class="nav-item"><a class="nav-link" href="./about-us.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
             </ul>
           </div>
         </div>
@@ -66,11 +67,11 @@
 
 <section class="hero--section res-bg-767">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-10 col-lg-7 text-start text-md-center banner-content text-white">
+    <div class="row">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5 banner-content text-white">
         <h1>Reduce risk in today's competitive climate</h1>
         <p class="my-4">We are an independent service provider with the expertise, skills, and technology to provide insurance management and transforming services for clients seeking efficiency and transparency. </p>
-        <a href="about-us.html" class="btn btn-outline-light">About Us</a>
+        <a href="./about-us.html" class="btn btn-outline-light">About Us</a>
         <a href="#meet-now" class="meet-now">MEET NOW <br> <i class="fa-solid fa-arrow-down"></i></a>
       </div>
     </div>
@@ -86,7 +87,7 @@
         <strong class="py-3 d-inline-block">Insurance Management</strong>
         <h2>A transparent insurance management experience to deliver results and support growth</h2>
         <p class="py-2">The Nascent Group provides insurance management services to insurers, reinsurers, sidecars, transformers, and other Special Purpose Vehicles. Our technology allows us to automate and streamline the insurance management process, meeting all deliverable with timeliness and accuracy.</p>
-        <a href="#" class="btn btn-outline-secondary">Reinsurance Solutions</a>
+        <a href="./nascent.html" class="btn btn-outline-secondary">Reinsurance Solutions</a>
       </div>
     </div>
   </div>
@@ -100,7 +101,7 @@
       <div class="col-lg-4 col-md-6 text-white">
         <strong class="py-3 d-inline-block">RUDDR</strong>
         <h2>The technological platform that drives our business</h2>
-        <a href="#" class="btn btn-outline-light mt-4">Read more</a>
+        <a href="https://www.h2co.io/ruddr" class="btn btn-outline-light mt-4"target="_blank">Read more</a>
       </div>
       <div class="col-lg-8 col-md-12 ruddr-card-wrapper text-center">
         <div class="row">
@@ -143,12 +144,12 @@
           <div class="col-md-6 pe-4 mb-5 mb-md-0">
             <h3 class="advisory-title border-top border-green">Compliance Advisory</h3>
             <p>We offer a comprehensive suite of compliance services, ensuring businesses adhere to legal standards and best practices. This suite of services is integral for companies aiming to maintain high standards of regulatory compliance and operational integrity.</p>
-            <a href="#" class="btn btn-outline-light">Read more</a>
+            <a href="./compliance-advisory.html" class="btn btn-outline-light">Read more</a>
           </div>
           <div class="col-md-6 pe-4">
             <h3 class="advisory-title border-top border-yellow">Re/Insurance Advisory</h3>
             <p>Our proficiency in underwriting combines broad-based business knowledge with detailed analysis of specific treaty exposures. We conduct thorough audits of underwriting practices and carefully examine reinsurance underwriting guidelines.</p>
-            <a href="#" class="btn btn-outline-light">Read more</a>
+            <a href="./re-insurance-advisory.html" class="btn btn-outline-light">Read more</a>
           </div>
         </div>
       </div>
@@ -167,17 +168,21 @@
           <strong>The Team</strong>
           <h2 class="text-gradient">Empowering you to grow your business and achieve success</h2>
           <p> The Nascent Group  consists of seasoned professionals, each bringing a wealth of experience in the industry. Driven by a passion for innovation and a commitment to collaboration, we pride ourselves on utilizing technology to fit the unique needs of our clients. Discover the minds behind our success and how they can help drive yours.</p>
-          <a href="#" class="btn btn-outline-secondary mb-4">Connect with us</a>
+          <a href="./contact.html" class="btn btn-outline-secondary mb-4">Connect with us</a>
           <br>
-          <a href="#" class="btn btn-outline-secondary">Senior management team</a>
+          <a href="./about-us.html#seniorManagement" class="btn btn-outline-secondary">Senior management team</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<div id="cookie-banner">
+  By using our website, you agree to our <a href="#">Cookie Policy</a>. 
+  <button onclick="acceptCookies()">Accept</button>
+</div>
 
-<section class="news--section py-4 py-md-5">
+<section class="news--section py-4 py-md-5" style="display: none;">
   <div class="container">
     <div class="news-content mb-4 text-center">
       <strong>Articles</strong>
@@ -228,8 +233,8 @@
     <div class="row">
       <div class="col-lg-6 me-auto mb-5 mb-lg-0">
         <div class="subcription-section">
-          <h4 class="subs-title">SUBSCRIBLE TO THE <br>NASCENT GROUP NEWSLETTER</h4>
-          <form class="row gx-3 py-4 flex-nowrap align-items-center subs-form">
+          <h4 class="subs-title" style="display: none;">SUBSCRIBLE TO THE <br>NASCENT GROUP NEWSLETTER</h4>
+          <form class="row gx-3 py-4 flex-nowrap align-items-center subs-form" style="display: none;">
             <div class="col-auto flex-grow-1">
               <label class="visually-hidden" for="subEmail">Name</label>
               <input type="email" class="form-control rounded-pill p-3 bg-transparent text-white" id="subEmail" required placeholder="Your mail">
@@ -240,9 +245,6 @@
           </form>
           <div class="footer-follow d-flex align-center text-white gap-3">
             <a href="./" class="foot-link me-auto"><img src="./img/nascent-group-footer-logo.webp" alt="nascent-group-footer-logo" width="200" /></a>
-            <a href="#" class="foot-link social-icon"> <i class="fa-brands fa-x-twitter"></i> </a>
-            <a href="#" class="foot-link social-icon"> <i class="fa-brands fa-facebook-f"></i> </a>
-            <a href="#" class="foot-link social-icon"> <i class="fa-brands fa-instagram"></i> </a>
           </div>
         </div>
       </div>
@@ -258,12 +260,10 @@
         <nav class="foot-nav">
           <strong class="nav-title d-inline-block mb-3">About Us</strong>
           <ul class="navbar-nav">
-            <li class="nav-item"><a href="#" class="nav-link">Who We Are</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">What We Do</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">What We Think</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">The Team</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Awards</a></li>
+            <li class="nav-item"><a href="./about-us.html#aboutUs-Top" class="nav-link">What We Do</a></li>
+            <li class="nav-item"><a href="./about-us.html#philosophy" class="nav-link">What We Think</a></li>
+            <li class="nav-item"><a href="./about-us.html#seniorManagement" class="nav-link">The Team</a></li>
+            <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -271,22 +271,26 @@
         <nav class="foot-nav">
           <strong class="nav-title d-inline-block mb-3">Join Our Team</strong>
           <ul class="navbar-nav">
-            <li class="nav-item"><a href="#" class="nav-link">Investors</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Insurance Management</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Advisory</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Locations</a></li>
+            <li class="nav-item"><a href="./contact.html" class="nav-link">Investors</a></li>
+            <li class="nav-item"><a href="./insurance-management.html" class="nav-link">Insurance Management</a></li>
+            <li class="nav-item"><a href="./advisory-services.html" class="nav-link">Advisory</a></li>
+            <li class="nav-item"><a href="./contact.html#locations" class="nav-link">Locations</a></li>
           </ul>
         </nav>
       </div>
     </div> <!-- row -->
     <hr>
     <div class="d-flex flex-wrap foot-copyright text-white gap-3 text-center justify-center">
-      <span class="me-auto d-block d-lg-inline-block col-12 col-lg-auto">&copy; 2023 Nascent Group. All rights reserved</span>
-      <a href="#">Privacy Policy </a>
-      <a href="#">Legal </a>
-      <a href="#">Do Not Sell or Share My Personal Information </a>
-      <a href="#">Cookie Preferences </a>
+      <span class="d-lg-inline-block col-12 col-lg-auto">&copy; 2023 Nascent Group. All rights reserved</span>
+      <div class="mx-auto custom-width ps-4">
+        <a href="#" class="me-3">Privacy Policy </a>
+        <a href="#" class="me-3">Legal </a>
+        <a href="#" class="me-3">Do Not Sell or Share My Personal Information </a>
+        <a style="cursor: pointer;" onclick="showCookieBanner()" class="me-3">Cookie Preferences </a>
+      </div>
+      <div class="ms-auto">
+        <a href="https://www.h2co.io/ruddr" target="_blank">Powered By H2Co</a>
+      </div>
     </div>
   </div>
 </footer>
@@ -297,6 +301,7 @@
 
 <script src="./js/jquery-3.7.1.min.js"></script>
 <script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/Cookies.js"></script>
 
 <script>
 

@@ -22,14 +22,14 @@
 </head>
 
 <body>
-
+  
 <div class="header-wrapper">
   <header>
     <nav class="navbar fixed-top border-bottom bg-white">
       <div class="container-fluid flex-nowrap">
-        <div class="header--contact m-0 me-lg-auto d-none d-sm-block">
-            <a href="#" class="p-2 fs-5"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#" class="p-2 fs-5"><i class="fa-solid fa-envelope"></i></a>
+        <div class="header--contact m-0 d-none d-sm-block" style="width: 200px;">
+            <a href="https://www.linkedin.com/company/nascent-management-and-advisory" class="p-2 fs-5" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:daniel@nascentgroup.bm" class="p-2 fs-5"><i class="fa-solid fa-envelope"></i></a>
         </div>
         <div class="header--logo mx-sm-auto">
             <a href="./" class="navbar-brand"><img src="./img/nascent-group-logo.webp" alt="nascent-group-logo" width="300" /></a>
@@ -38,7 +38,7 @@
         <div class="navbar-expand-lg navbar-expand-lg d-none d-lg-block">
           <ul class="navbar-nav pe-3">
             <li class="nav-item"><a class="nav-link" href="./about-us.html">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Reinsurance Solutions</a></li>
+            <li class="nav-item"><a class="nav-link" href="./nascent.html">Reinsurance Solutions</a></li>
           </ul>
         </div>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -56,7 +56,7 @@
               <li class="nav-item"><a class="nav-link active" aria-current="page" href="./">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="./insurance-management.html">Insurance Management</a></li>
               <li class="nav-item"><a class="nav-link" href="./advisory-services.html">Advisory Services</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Nascent Reinsurance</a></li>
+              <li class="nav-item"><a class="nav-link" href="./nascent.html">Nascent Re</a></li>
               <li class="nav-item"><a class="nav-link" href="./about-us.html">About Us</a></li>
               <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
             </ul>
@@ -67,7 +67,7 @@
 </div>
 
 
-<section class="aboutus-banner res-bg-767 bg-light">
+<section class="aboutus-banner res-bg-767 bg-light" id="aboutUs-Top">
     <div class="container">
         <div class="row justify-center">
             <div class="col-md-8 col-lg-6 text-center text-white mb-4">
@@ -79,7 +79,7 @@
 </section>
 
 
-<section class="about-content py-5">
+<section class="about-content py-5" id="philosophy">
     <div class="container">
       <div class="col-md-10 aboutus-content m-auto text-center pb-5">
         <p>The Horseshoe Group has broad capabilities and expertise in all areas of insurance management and fund administration.</p>
@@ -112,7 +112,7 @@
     </div>
 </section>
 
-<section class="ourteam-section">
+<section class="ourteam-section" id="seniorManagement">
   <div class="container">
     <div class="ourteam-content text-center">
       <strong class="d-block pb-3">Our Team</strong>
@@ -254,7 +254,7 @@
               <a href="#" class="social-icon fs-4 p-3"> <i class="fa-brands fa-facebook-f"></i> </a>
               <a href="#" class="social-icon fs-4 p-3"> <i class="fa-brands fa-instagram"></i> </a>
             </div>
-            <p>Andre Perez has been in the Insurance industry for over 30 years. He is a proven disruptor and leader in the space. Most notably, in 2005, he founded and led Horseshoe Group. Mr. Perez drove them to become the largest independent ILS transformer in the world over his 16 years of leadership . In 2020, Mr. Perez took part in a successful exit of Horseshoe Group as it was acquired by a subsidiary of industry giant Gallagher. Prior to Horseshoe, Andre gained experience as an actuary andunderwriter at Zurich, KPMG, OPL, and Alea. Andre is a qualified actuary and graduated from University of Montreal with a BSc in Mathematics.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
           </div>
           
         </div>
@@ -264,6 +264,10 @@
 
 </section>
 
+<div id="cookie-banner">
+  By using our website, you agree to our <a href="#">Cookie Policy</a>. 
+  <button onclick="acceptCookies()">Accept</button>
+</div>
 
 <section class="service-help">
   <div class="container">
@@ -272,7 +276,7 @@
           <h2 class="mb-3 text-gradient fs-4">We are constantly evolving and aim to become your true partner in delivering exceptional insurance and fund related administration services</h2>
           <small class="text-muted">John Sample, CEO - Nascent Group</small>
           <p class="my-4 text-dark">I want to form a Reinsurance Company</p>
-          <a href="#" class="btn btn-outline-secondary">Click here for help</a>
+          <a href="./contact.html" class="btn btn-outline-secondary">Click here for help</a>
       </div>
     </div>
   </div>
@@ -285,8 +289,8 @@
     <div class="row">
       <div class="col-lg-6 me-auto mb-5 mb-lg-0">
         <div class="subcription-section">
-          <h4 class="subs-title">SUBSCRIBLE TO THE <br>NASCENT GROUP NEWSLETTER</h4>
-          <form class="row gx-3 py-4 flex-nowrap align-items-center subs-form">
+          <h4 class="subs-title" style="display: none;">SUBSCRIBLE TO THE <br>NASCENT GROUP NEWSLETTER</h4>
+          <form class="row gx-3 py-4 flex-nowrap align-items-center subs-form" style="display: none;">
             <div class="col-auto flex-grow-1">
               <label class="visually-hidden" for="subEmail">Name</label>
               <input type="email" class="form-control rounded-pill p-3 bg-transparent text-white" id="subEmail" required placeholder="Your mail">
@@ -297,9 +301,6 @@
           </form>
           <div class="footer-follow d-flex align-center text-white gap-3">
             <a href="./" class="foot-link me-auto"><img src="./img/nascent-group-footer-logo.webp" alt="nascent-group-footer-logo" width="200" /></a>
-            <a href="#" class="foot-link social-icon"> <i class="fa-brands fa-x-twitter"></i> </a>
-            <a href="#" class="foot-link social-icon"> <i class="fa-brands fa-facebook-f"></i> </a>
-            <a href="#" class="foot-link social-icon"> <i class="fa-brands fa-instagram"></i> </a>
           </div>
         </div>
       </div>
@@ -315,12 +316,10 @@
         <nav class="foot-nav">
           <strong class="nav-title d-inline-block mb-3">About Us</strong>
           <ul class="navbar-nav">
-            <li class="nav-item"><a href="#" class="nav-link">Who We Are</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">What We Do</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">What We Think</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">The Team</a></li>
+            <li class="nav-item"><a href="./about-us.html#aboutUs-Top" class="nav-link">What We Do</a></li>
+            <li class="nav-item"><a href="./about-us.html#philosophy" class="nav-link">What We Think</a></li>
+            <li class="nav-item"><a href="./about-us.html#seniorManagement" class="nav-link">The Team</a></li>
             <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Awards</a></li>
           </ul>
         </nav>
       </div>
@@ -328,22 +327,26 @@
         <nav class="foot-nav">
           <strong class="nav-title d-inline-block mb-3">Join Our Team</strong>
           <ul class="navbar-nav">
-            <li class="nav-item"><a href="#" class="nav-link">Investors</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Insurance Management</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Advisory</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Locations</a></li>
+            <li class="nav-item"><a href="./contact.html" class="nav-link">Investors</a></li>
+            <li class="nav-item"><a href="./insurance-management.html" class="nav-link">Insurance Management</a></li>
+            <li class="nav-item"><a href="./advisory-services.html" class="nav-link">Advisory</a></li>
+            <li class="nav-item"><a href="./contact.html#locations" class="nav-link">Locations</a></li>
           </ul>
         </nav>
       </div>
     </div> <!-- row -->
     <hr>
     <div class="d-flex flex-wrap foot-copyright text-white gap-3 text-center justify-center">
-      <span class="me-auto d-block d-lg-inline-block col-12 col-lg-auto">&copy; 2023 Nascent Group. All rights reserved</span>
-      <a href="#">Privacy Policy </a>
-      <a href="#">Legal </a>
-      <a href="#">Do Not Sell or Share My Personal Information </a>
-      <a href="#">Cookie Preferences </a>
+      <span class="d-lg-inline-block col-12 col-lg-auto">&copy; 2023 Nascent Group. All rights reserved</span>
+      <div class="mx-auto custom-width ps-4">
+        <a href="#" class="me-3">Privacy Policy </a>
+        <a href="#" class="me-3">Legal </a>
+        <a href="#" class="me-3">Do Not Sell or Share My Personal Information </a>
+        <a style="cursor: pointer;" onclick="showCookieBanner()" class="me-3">Cookie Preferences </a>
+      </div>
+      <div class="ms-auto">
+        <a href="https://www.h2co.io/ruddr" target="_blank">Powered By H2Co</a>
+      </div>
     </div>
   </div>
 </footer>
@@ -358,6 +361,24 @@
 <script src="./slick/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
 
 <script>
+  
+document.addEventListener("DOMContentLoaded", function() {
+  var knowMoreButtons = document.querySelectorAll('button[data-bs-target="#teamPopup"]');
+  knowMoreButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+      var teamCard = button.closest('.team-card');
+      var nameElement = teamCard.querySelector('.team-name');
+      var designationElement = teamCard.querySelector('.team-designation');
+      var personImg = document.getElementById('personImg');
+      var personName = document.getElementById('personName');
+      var personDes = document.getElementById('personDes');
+      personImg.src = teamCard.querySelector('.team-img').src;
+      personName.textContent = nameElement.textContent;
+      personDes.textContent = designationElement.textContent;
+    });
+  });
+});
+
 $(document).on('ready', function() {
   $(".team-slider").slick({
     infinite: false,
@@ -391,6 +412,7 @@ $(document).on('ready', function() {
   });
 })
 </script>
+<script src="./js/Cookies.js"></script>
 
 
 </body>

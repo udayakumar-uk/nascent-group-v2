@@ -10,6 +10,10 @@
 	--gray: #848484;
 }
 
+* {
+	overscroll-behavior: none;
+  }
+
 body, html{
 	font-family: "Red Hat Display", sans-serif;
 	font-optical-sizing: auto;
@@ -42,6 +46,11 @@ h1,h2,h3,h4,h5,h6{
 .text-white :is(h1, h2, h3, h4, h5, h6), .text-white :is(p), .text-white :is(a) {
 	color: #fff;
 }
+
+.text-black :is(h1, h2, h3, h4, h5, h6), .text-black :is(p), .text-black :is(a) {
+	color: black;
+}
+
 .text-darkblue{
 	color: var(--darkblue);
 }
@@ -195,17 +204,12 @@ img{
 /* hero--section */
 .hero--section{
 	/* background: url('../img/hero-banner-1.webp') no-repeat top left/cover; */
-    /* padding: 12vw 0 32vw;
+    padding: 12vw 0 32vw;
 	position: relative;
     background-image: url(../img/home/home-bg-vector.svg), url(../img/home/home-bg-4.svg), url(../img/home/home-bg-6.png), url(../img/home/home-bg-5.webp);
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: left top, right 20%, right 50%, calc(100% + 100px) 100px;
-    background-size: contain, 150px, calc(100vw - 75%), clamp(760px, 75%, 80%); */
-	padding: 10rem 0 12rem;
-	background: none;
-	background: -webkit-linear-gradient(-40deg, #754ea9 30%, #4775a5 100%);
-	clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
-	position: relative;
+    background-size: contain, 150px, calc(100vw - 75%), clamp(760px, 75%, 80%);
 }
 
 .gray-line{
@@ -221,11 +225,14 @@ img{
 	border-radius: 5px;
 	background: linear-gradient(-40deg, #323C6E 30%, #32305D 100%);
 	clip-path: polygon(0% 0%, 100% 20%, 50% 100%);
-	padding: 2.5rem 2.5rem 3rem;
+	padding: 3rem 3rem 5rem;
 	position: absolute;
-	bottom: 8%;
-	right: 5%;
+	bottom: 15%;
+	left: 30px;
 	z-index: 2;
+}
+.meet-now:hover {
+    text-decoration: none !important;;
 }
 
 /* .meet-now.gradient-green{
@@ -320,6 +327,13 @@ img{
 	padding-block: 6rem;
 	background: url('../img/advisory-sevices/advisory-bg.webp') no-repeat center/cover;
 }
+.service-section-InsuranceManagement{
+	padding-block: 6rem;
+	background: url('../img/Disaster.jpg') no-repeat center/cover;
+}
+.service-section-withoutBG{
+	padding-block: 6rem;
+}
 
 .service-help{
 	padding-block: 12rem;
@@ -339,6 +353,8 @@ img{
     background-size: 40%, contain, contain ;
 }
 
+
+
 .compliance-service, .insurace-service{
     padding: 8rem 0;
 }
@@ -352,12 +368,26 @@ img{
 	padding-bottom: 1rem;
 	font-weight: 500;
 }
+.ruddr-title-y{
+	color: var(--yellow);
+	padding-bottom: 1rem;
+	font-weight: 500;
+}
 .ruddr-content{
 	margin: 0;    
 	font-size: 1.1rem;
     color: #fff;
 }
 
+/*NacsentPage*/
+.nascent-banner{
+    padding: 10rem 0 15rem;
+	position: relative;
+    background-image:  url(../img/NascentRe-crop.png), url(../img/compliance-advisory/compliance-banner-2.svg), url(../img/compliance-advisory/compliance-banner-1.svg);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: right center, calc(50% + 100px) center, calc(50% - 100px) center;
+    background-size: 40%, contain, contain ;
+}
 
 /* Insurance-page */
 .insurance-card .ruddr-card{
@@ -402,6 +432,41 @@ img{
 .ourteam-section .team-designation{
 	min-height: 50px;
     font-size: 14px;
+}
+
+/*Cookies*/
+
+#cookie-banner {
+	display: none; /* Initially hidden */
+	position: fixed;
+	bottom: 50px; /* Adjust as needed */
+	left: 50%; /* Adjust as needed */
+	transform: translateX(-50%);
+	background-color: #f1f1f1;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	z-index: 9999;
+}
+
+#cookie-banner.show {
+	display: block;
+}
+
+#cookie-banner p {
+	margin-bottom: 10px;
+}
+
+#cookie-banner button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+#cookie-banner button:hover {
+	background-color: #45a049;
 }
 
 
@@ -546,6 +611,12 @@ footer hr{
 	border-color: #bbb;
 }
 
+.custom-width {
+	width: 50%; /* specify a custom width */
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 
 
@@ -582,18 +653,18 @@ footer hr{
 }
 @media only screen and (max-width: 767px) {
     
-    /* .res-bg-767{
+    .res-bg-767{
 		padding: 8rem 0 10rem;
 		background: none;
 		background: -webkit-linear-gradient(-40deg, #754ea9 30%, #4775a5 100%);
 		clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
-	} */
-	/* .meet-now{
+	}
+	.meet-now{
 		padding: 2rem 2.5rem 3rem;
 		bottom: 5%;
 		left: auto;
 		right: 30px;
-	} */
+	}
 	.advisory--section{
 		padding: 10rem 0;
 		margin-block: -8rem 0rem;

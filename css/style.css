@@ -19,7 +19,7 @@ body, html{
 	font-optical-sizing: auto;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 14px;
+	font-size: 15px;
 	color:#333; 
 	scroll-behavior: smooth;
 }
@@ -161,13 +161,25 @@ img{
 
 .nav-item{
 	padding-block: 8px;
+
+	&.dropdown > .dropdown-menu{
+		--bs-dropdown-link-color: #fff;
+		--bs-dropdown-bg: #44659d;
+		--bs-dropdown-padding-y: 0;
+		--bs-dropdown-item-padding-y: 0.7rem;
+		--bs-dropdown-font-size: 1.1rem;
+		/* --bs-dropdown-link-hover-bg: #ffffff9a; */
+		border: 0;
+		overflow: hidden;
+		margin: 0;
+	}
 }
 
 .nav-link{
 	position: relative;
 	display: inline-block;
 	padding-block: 0;
-	&:after{
+	&::before{
 		height: 1px;
 		width: 0;
 		content: '';
@@ -178,7 +190,7 @@ img{
 		background: #fff;
 		transition: all linear 0.3s;
 	}
-	&:hover:after{
+	&:hover::before{
 		width: 100%;
 		left: 0;
 		right: auto;
@@ -233,7 +245,7 @@ img{
 
 
 /* hero--section */
-.hero--section{
+.res-bg-767{
 	/* background: url('../img/hero-banner-1.webp') no-repeat top left/cover; */
     /* padding: 12vw 0 32vw;
 	position: relative;
@@ -242,7 +254,7 @@ img{
     background-position: left top, right 20%, right 50%, calc(100% + 100px) 100px;
     background-size: contain, 150px, calc(100vw - 75%), clamp(760px, 75%, 80%); */
 	
-	padding: 10rem 0 15rem;
+	padding: 12rem 0;
 	background: none;
 	position: relative;
 	background: -webkit-linear-gradient(-40deg, #754ea9 30%, #4775a5 100%);
@@ -434,19 +446,49 @@ img{
 	background: url('../img/insurance-management/insurance-bg.svg') no-repeat center/contain;
 }
 
+.card .card-avatar{
+	width: 120px;
+    height: 120px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    padding: 10px;
+    background: rgb(53, 255, 42);
+    background: linear-gradient(318deg, rgba(53, 255, 42, 1) 10%, rgba(44, 231, 238, 1) 50%, rgba(233, 34, 218, 1) 80%);
+	& img {
+        border-radius: 50%;
+    }
+}
 
 
+.benefits-section ul {
+    & li {
+        padding-left: 3rem;
+        position: relative;
+        padding-bottom: 1.2rem;
+		&::before {
+            position: absolute;
+            left: -5px;
+            top: -8px;
+            content: '';
+            display: block;
+            width: 35px;
+            height: 35px;
+            background: url(../img/list-icon.svg) no-repeat center / 100%;
+        }
+    }
+}
 
 /* About us page */
 /* aboutus-banner */
-.aboutus-banner{
+/* .aboutus-banner{
     padding: 10rem 0 15rem;
 	position: relative;
     background-image: url(../img/about-us/about-banner-3.webp),  url(../img/about-us/about-banner-1.svg), url(../img/about-us/about-banner-2.svg);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 10% center, center bottom, 60% top;
     background-size: 300px, contain, 700px ;
-}
+} */
 
 
 .about-content{

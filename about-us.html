@@ -27,20 +27,14 @@
   <header>
     <nav class="navbar fixed-top border-bottom bg-white">
       <div class="container-fluid flex-nowrap">
-        <div class="header--contact m-0 d-none d-sm-block" style="width: 200px;">
-            <a href="https://www.linkedin.com/company/nascent-management-and-advisory" class="p-2 fs-5" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="mailto:daniel@nascentgroup.bm" class="p-2 fs-5"><i class="fa-solid fa-envelope"></i></a>
+        <div class="header--contact m-0 d-none d-sm-block">
+          <a href="https://www.linkedin.com/company/nascent-management-and-advisory" class="p-2 fs-5" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:daniel@nascentgroup.bm" class="p-2 fs-5"><i class="fa-solid fa-envelope"></i></a>
         </div>
         <div class="header--logo mx-sm-auto">
             <a href="./" class="navbar-brand"><img src="./img/nascent-group-logo.webp" alt="nascent-group-logo" width="300" /></a>
         </div>
         
-        <div class="navbar-expand-lg navbar-expand-lg d-none d-lg-block">
-          <ul class="navbar-nav pe-3">
-            <li class="nav-item"><a class="nav-link" href="./about-us.html">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="./nascent.html">Reinsurance Solutions</a></li>
-          </ul>
-        </div>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-line"></span>
           <span class="navbar-line"></span>
@@ -52,12 +46,18 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body px-4 px-md-5">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
               <li class="nav-item"><a class="nav-link active" aria-current="page" href="./">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="./insurance-management.html">Insurance Management</a></li>
-              <li class="nav-item"><a class="nav-link" href="./advisory-services.html">Advisory Services</a></li>
-              <li class="nav-item"><a class="nav-link" href="./nascent.html">Nascent Re</a></li>
               <li class="nav-item"><a class="nav-link" href="./about-us.html">About Us</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./insurance-management.html">Insurance Management</a></li>
+                  <li><a class="dropdown-item" href="./nascent.html">Nascent Re</a></li>
+                  <li><a class="dropdown-item" href="./advisory-services.html">Advisory Services</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="./team.html">Team</a></li>
               <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
             </ul>
           </div>
@@ -66,20 +66,19 @@
     </nav>
 </div>
 
-
 <section class="aboutus-banner res-bg-767 bg-light" id="aboutUs-Top">
     <div class="container">
         <div class="row justify-center">
             <div class="col-md-8 col-lg-6 text-center text-white mb-4">
                 <h1 class="mb-3">About Us</h1>
-                <p>The Horseshoe Group is an independent and privately-owned group of financial services companies forming a leading independent insurance manager and fund administrator dedicated to both the insurance-linked securities and alternative fund markets.</p>
             </div>
         </div>
     </div>
+    <img src="./img/home/line.svg" alt="line" class="gray-line">
 </section>
 
 
-<section class="about-content py-5" id="philosophy">
+<!-- <section class="about-content py-5" id="philosophy">
     <div class="container">
       <div class="col-md-10 aboutus-content m-auto text-center pb-5">
         <p>The Horseshoe Group has broad capabilities and expertise in all areas of insurance management and fund administration.</p>
@@ -110,9 +109,48 @@
         </div>
       </div>
     </div>
+</section> -->
+
+<section class="card-section py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-sm-10">
+        <p><strong>Dear Esteemed Clients, Business Partners, Friends, and Colleagues,</strong></p>
+        <p>Welcome to the Nascent Group!</p>
+        <p>Our mission is to redefine the insurance servicing space with cutting-edge technology, deep-rooted expertise, and unwavering service excellence.</p>
+        <p>We embarked on this journey not to replicate the past but to break new ground, addressing market pain points with unparalleled efficiency, independence, and proven expertise.</p>
+        <p>Our tech-forward approach empowers us to tackle industry challenges in innovative ways, always staying at the forefront of what's possible. Through our sister company, H2 Group, we have access to advanced technology that our seasoned team leverages to enhance agility and add significant value to our services.</p>
+        <p>While our industry knowledge and investment in technology drive efficiency and client success, our true strength lies in our people. I am both humbled and proud to have assembled a team of incredibly talented and dedicated individuals from all around the world who share my vision and enthusiasm. Each of them brings extensive knowledge and a passion for making a difference.</p>
+        <p>Our entrepreneurial spirit fuels our ability to offer tailored solutions, adapt to changing needs, and go the extra mile to deliver market-leading service. We understand that every client and business case is unique, and our ability to tailor every relationship sets us apart from other providers.</p>
+        <p>At Nascent, we embrace high expectations and promise uncompromising service. We hold ourselves accountable for your success, continuously evaluating our performance based on your achievements. When you win, we win. It’s that simple.</p>
+        <p>Thank you for considering Nascent Group. We look forward to building a successful and enduring partnership with you.</p>
+
+        <div class="faithful-section d-flex align-items-center justify-content-between mt-4">
+          <div class="auth-name">
+            <i>Yours truly,</i>
+            <p>
+              Andre Perez
+              <br>
+              <span class="fw-bold">Founder &amp; CEO</span>
+            </p>
+          </div>
+
+          <div class="auth-img">
+            <div class="card border-0">
+              <div class="card-body">
+                <div class="card-avatar mb-3">
+                  <img src="./img/team/Andre.webp" alt="Stanley Perera">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section class="ourteam-section" id="seniorManagement">
+<!-- <section class="ourteam-section" id="seniorManagement">
   <div class="container">
     <div class="ourteam-content text-center">
       <strong class="d-block pb-3">Our Team</strong>
@@ -237,7 +275,6 @@
   </div>
 
 
-  <!-- Modal -->
   <div class="modal fade" id="teamPopup" tabindex="-1" aria-labelledby="teamPopupLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -262,26 +299,64 @@
     </div>
   </div>
 
+</section> -->
+
+
+
+
+
+<section class="benefits-section py-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <h2 class="text-center pb-4">Why the Nascent Group?</h2>
+
+        <ul type="none">
+          <li>
+            <strong class="text-primary">PEOPLE</strong>
+            <p>Our greatest strength lies in our exceptional team, each contributing unique talents, extensive expertise, and a proven track record, ensuring we stay at the forefront of the industry.</p>
+          </li>
+          <li>
+            <strong class="text-primary">TECHNOLOGY DRIVEN</strong>
+            <p>We are pioneers in leveraging advanced technology to revolutionize industry practices, empowering our clients with unprecedented efficiency for sustainable growth.</p>
+          </li>
+          <li>
+            <strong class="text-primary">SERVICE EXCELLENCE</strong>
+            <p>Excellence defines our service ethos, empowering us to consistently deliver exceptional outcomes and earn recognition for the outstanding client experiences we provide.</p>
+          </li>
+          <li>
+            <strong class="text-primary">INDEPENDENCE</strong>
+            <p>Our commitment to independence fosters transparency, earning unwavering trust from our clients as we tirelessly champion their interests and aspirations.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
 
-<div id="cookie-banner">
-  By using our website, you agree to our <a href="#">Cookie Policy</a>. 
-  <button onclick="acceptCookies()">Accept</button>
-</div>
+
 
 <section class="service-help">
   <div class="container">
     <div class="row justify-center">
       <div class="col-md-8 col-lg-6 text-center">
-          <h2 class="mb-3 text-gradient fs-4">We are constantly evolving and aim to become your true partner in delivering exceptional insurance and fund related administration services</h2>
-          <small class="text-muted">John Sample, CEO - Nascent Group</small>
-          <p class="my-4 text-dark">I want to form a Reinsurance Company</p>
+          <h2 class="mb-3 text-gradient fs-4">Join us at Nascent Group, where innovation, expertise, and excellence converge to create unparalleled value. Partner with us and experience the difference of working with a team dedicated to your success.</h2>
+          <!-- <small class="text-muted">John Sample, CEO - Nascent Group</small>
+          <p class="my-4 text-dark">I want to form a Reinsurance Company</p> -->
           <a href="./contact.html" class="btn btn-outline-secondary">Click here for help</a>
       </div>
     </div>
   </div>
 </section>
 
+
+
+
+
+<div id="cookie-banner">
+  By using our website, you agree to our <a href="#">Cookie Policy</a>. 
+  <button onclick="acceptCookies()">Accept</button>
+</div>
 
 
 <footer class="footer-wrapper">

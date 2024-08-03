@@ -454,8 +454,8 @@ img{
     border-radius: 50%;
     margin: auto;
     padding: 10px;
-    background: rgb(53, 255, 42);
-    background: linear-gradient(318deg, rgba(53, 255, 42, 1) 10%, rgba(44, 231, 238, 1) 50%, rgba(233, 34, 218, 1) 80%);
+    /* background: rgb(53, 255, 42);
+    background: linear-gradient(318deg, rgba(53, 255, 42, 1) 10%, rgba(44, 231, 238, 1) 50%, rgba(233, 34, 218, 1) 80%); */
 	& img {
         border-radius: 50%;
     }

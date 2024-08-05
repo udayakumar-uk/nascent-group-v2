@@ -117,11 +117,11 @@ img{
 }
 
 .border-top{
-	padding-block: 1.5rem;
+	padding-block: 1.2rem;
 	border-top: 8px solid #ddd;
 	border-width: 6px !important;
-    font-weight: 500;
-    font-size: 2.4rem;
+    font-weight: 600;
+    font-size: 2rem;
 	display: inline-block;
 }
 
@@ -332,6 +332,8 @@ img{
     color: #bca9d5;
     align-items: center;
     display: flex;
+	justify-content: center;
+	min-height: 150px;
 	/* flex-wrap: wrap; */
 	flex-direction: column;
 	background: linear-gradient(143.7deg, #2C3A65 30%, #425BA3 162.8%),
@@ -385,8 +387,9 @@ img{
 	background: url('../img/advisory-sevices/advisory-bg.webp') no-repeat center/cover;
 }
 .service-section-InsuranceManagement{
-	padding-block: 6rem;
-	background: url('../img/Disaster.jpg') no-repeat center/cover;
+	padding-block: 5rem;
+	margin-block: 3rem;
+	background: linear-gradient(40deg, #0000005c 50%, #0000005c 100%), url('../img/Disaster.jpg') no-repeat center/cover;
 }
 .service-section-withoutBG{
 	padding-block: 6rem;
@@ -418,7 +421,7 @@ img{
 
 
 .compliance-card .ruddr-card, .insurance-card .ruddr-card{
-	align-items: start;
+	/* align-items: start; */
 }
 .ruddr-title{
 	color: var(--text-blue);

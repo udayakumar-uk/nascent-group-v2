@@ -24,7 +24,7 @@
   <header>
     <nav class="navbar fixed-top border-bottom bg-white">
       <div class="container-fluid flex-nowrap">
-        <div class="header--contact m-0 d-none d-sm-block" style="width: 200px;">
+        <div class="header--contact m-0 d-none d-sm-block">
           <a href="https://www.linkedin.com/company/nascent-management-and-advisory" class="p-2 fs-5" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
           <a href="mailto:daniel@nascentgroup.bm" class="p-2 fs-5"><i class="fa-solid fa-envelope"></i></a>
         </div>
@@ -32,12 +32,6 @@
             <a href="./" class="navbar-brand"><img src="./img/nascent-group-logo.webp" alt="nascent-group-logo" width="300" /></a>
         </div>
         
-        <div class="navbar-expand-lg navbar-expand-lg d-none d-lg-block">
-          <ul class="navbar-nav pe-3">
-            <li class="nav-item"><a class="nav-link" href="./about-us.html">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="./nascent.html">Reinsurance Solutions</a></li>
-          </ul>
-        </div>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-line"></span>
           <span class="navbar-line"></span>
@@ -49,12 +43,18 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body px-4 px-md-5">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
               <li class="nav-item"><a class="nav-link active" aria-current="page" href="./">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="./insurance-management.html">Insurance Management</a></li>
-              <li class="nav-item"><a class="nav-link" href="./advisory-services.html">Advisory Services</a></li>
-              <li class="nav-item"><a class="nav-link" href="./nascent.html">Nascent Re</a></li>
               <li class="nav-item"><a class="nav-link" href="./about-us.html">About Us</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./insurance-management.html">Insurance Management</a></li>
+                  <li><a class="dropdown-item" href="./nascent.html">Nascent Re</a></li>
+                  <li><a class="dropdown-item" href="./advisory-services.html">Advisory Services</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="./team.html">Team</a></li>
               <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
             </ul>
           </div>
@@ -69,11 +69,12 @@
         <div class="row justify-center">
             <div class="col-sm-10 col-md-7 col-lg-5 text-center text-white mb-4">
                 <h1 class="mb-3">Insurance Management</h1>
-                <p>The Nascent Group offers a variety of insurance management services to insurers, reinsurers, sidecars, transformers, and catastrophe bonds. Our technologically-enabled team is inherently agile and equipped with the tools to offer efficient and expedited service.</p>
+                <p>At Nascent Group, your success is our ultimate goal. We are dedicated to innovation, technology and providing the best solutions in a fast-paced insurance market, where your needs and challenges continually evolve. We are fully committed to being your key partnerfor the long term.</p>
                 <a href="#meet-now" class="meet-now gradient-green">MEET NOW <br> <i class="fa-solid fa-arrow-down"></i></a>
             </div>
         </div>
     </div>
+    <img src="./img/home/line.svg" alt="line" class="gray-line">
 </section>
 
 
@@ -134,7 +135,7 @@
 <footer class="footer-wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 me-auto mb-5 mb-lg-0">
+      <div class="col-lg-3 me-auto mb-5 mb-lg-0">
         <div class="subcription-section">
           <h4 class="subs-title" style="display: none;">SUBSCRIBLE TO THE <br>NASCENT GROUP NEWSLETTER</h4>
           <form class="row gx-3 py-4 flex-nowrap align-items-center subs-form" style="display: none;">
@@ -151,7 +152,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-4 col-lg-2 text-white py-4 py-md-0">
+      <div class="col-sm-4 col-lg-3 text-white py-4 py-md-0">
         <nav class="foot-nav">
           <strong class="nav-title d-inline-block mb-3">Address</strong><br>
           <strong class="add-country py-2 d-inline-block">Bermuda</strong>
@@ -159,7 +160,7 @@
           <a href="#" class="add-contact">+1 (441) 295 8478 </a>
         </nav>
       </div>
-      <div class="col-sm-4 col-lg-2 text-white py-4 py-md-0">
+      <div class="col-sm-4 col-lg-3 text-white py-4 py-md-0">
         <nav class="foot-nav">
           <strong class="nav-title d-inline-block mb-3">About Us</strong>
           <ul class="navbar-nav">
@@ -170,7 +171,7 @@
           </ul>
         </nav>
       </div>
-      <div class="col-sm-4 col-lg-2 text-white py-4 py-md-0">
+      <div class="col-sm-4 col-lg-3 text-white py-4 py-md-0">
         <nav class="foot-nav">
           <strong class="nav-title d-inline-block mb-3">Join Our Team</strong>
           <ul class="navbar-nav">
@@ -183,20 +184,21 @@
       </div>
     </div> <!-- row -->
     <hr>
-    <div class="d-flex flex-wrap foot-copyright text-white gap-3 text-center justify-center">
-      <span class="d-lg-inline-block col-12 col-lg-auto">&copy; 2023 Nascent Group. All rights reserved</span>
-      <div class="mx-auto custom-width ps-4">
-        <a href="#" class="me-3">Privacy Policy </a>
-        <a href="#" class="me-3">Legal </a>
-        <a href="#" class="me-3">Do Not Sell or Share My Personal Information </a>
-        <a style="cursor: pointer;" onclick="showCookieBanner()" class="me-3">Cookie Preferences </a>
+    <div class="d-flex flex-wrap flex-lg-nowrap foot-copyright text-white gap-3 text-center justify-center">
+      <span class="d-inline-block col-12 col-lg-auto">&copy; 2023 Nascent Group. All rights reserved</span>
+      <div class="mx-auto flex-grow-1 d-flex flex-wrap justify-content-center gap-3">
+        <a href="#" class="nav-link">Privacy Policy </a>
+        <a href="#" class="nav-link">Legal </a>
+        <a href="#" class="nav-link">Do Not Sell or Share My Personal Information </a>
+        <a href="javascript:showCookieBanner();" class="nav-link">Cookie Preferences </a>
       </div>
-      <div class="ms-auto">
-        <a href="https://www.h2co.io/ruddr" target="_blank">Powered By H2Co</a>
+      <div class="flex-shrink-0">
+        <a href="https://www.h2co.io/ruddr" class="nav-link" target="_blank">Powered By H2Co</a>
       </div>
     </div>
   </div>
 </footer>
+
 
 
 

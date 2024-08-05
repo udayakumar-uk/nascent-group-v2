@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Nascent Group – Team Page</title>
+	<!-- META TAGS -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.webp">
+	<meta name="author" content="Nascent Group">
+
+	<!-- STYLES -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" type="text/css" href="./slick/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  
+<div class="header-wrapper">
+  <header>
+    <nav class="navbar fixed-top border-bottom bg-white">
+      <div class="container-fluid flex-nowrap">
+        <div class="header--contact m-0 d-none d-sm-block">
+          <a href="https://www.linkedin.com/company/nascent-management-and-advisory" class="p-2 fs-5" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="mailto:daniel@nascentgroup.bm" class="p-2 fs-5"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <div class="header--logo mx-sm-auto">
+            <a href="./" class="navbar-brand"><img src="./img/nascent-group-logo.webp" alt="nascent-group-logo" width="300" /></a>
+        </div>
+        
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-line"></span>
+          <span class="navbar-line"></span>
+          <span class="navbar-line"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5> -->
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body px-4 px-md-5">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="./">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="./about-us.html">About Us</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./insurance-management.html">Insurance Management</a></li>
+                  <li><a class="dropdown-item" href="./nascent.html">Nascent Re</a></li>
+                  <li><a class="dropdown-item" href="./advisory-services.html">Advisory Services</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="./team.html">Team</a></li>
+              <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+</div>
+
+<section class="aboutus-banner res-bg-767 bg-light" id="aboutUs-Top">
+    <div class="container">
+        <div class="row justify-center">
+            <div class="col-lg-10 col-xl-8 text-center text-white">
+                <h1 class="mb-3">TEAM: OUR GREATEST ASSET</h1>
+                <p class="my-4">While our deep industry knowledge and investment in cutting-edge technology drive efficiency and client success, our true strength lies in our people. We are proud to have assembled a team of industry experts who bring unique talents, extensive knowledge, and success stories to their roles. We care deeply for our clients and work relentlessly to help them grow. This dedication truly makes our team the greatest asset</p>
+            </div>
+        </div>
+    </div>
+    <img src="./img/home/line.svg" alt="line" class="gray-line">
+</section>
+
+
+
+<section class="ourteam-section" id="seniorManagement">
+  <div class="container">
+    <div class="ourteam-content text-center">
+      <strong class="d-block pb-3">Our Team</strong>
+      <h2 class="title-bb text-darkblue border-green d-inline-block">Senior Management Team</h2>
+    </div>
+
+    <section class="team-slider slider text-center">
+      <div class="team-wrapper">
+        <div class="team-card">
+          <img src="./img/team/person-2.svg" class="team-img" alt="team">
+          <strong class="team-name">Yulanda Francis</strong>
+          <p class="team-designation">President, Horseshoe Re</p>
+          <button class="btn btn-outline-secondary px-4 py-2" data-bs-toggle="modal" data-bs-target="#teamPopup">Know More</button>
+        </div>
+        <div class="team-card mt-5">
+          <img src="./img/team/person-1.svg" class="team-img" alt="team">
+          <strong class="team-name">Andre Perez</strong>
+          <p class="team-designation">Chairman & CEO</p>
+          <button class="btn btn-outline-secondary px-4 py-2" data-bs-toggle="modal" data-bs-target="#teamPopup">Know More</button>
+        </div>
+      </div>
+      <div class="team-wrapper">
+        <div class="team-card">
+          <img src="./img/team/person-3.svg" class="team-img" alt="team">
+          <strong class="team-name">Nigel Godfrey</strong>
+          <p class="team-designation">CFO/EVP, Insurance Management</p>
+          <button class="btn btn-outline-secondary px-4 py-2" data-bs-toggle="modal" data-bs-target="#teamPopup">Know More</button>
+        </div>
+        <div class="team-card mt-5">
+          <img src="./img/team/person-4.svg" class="team-img" alt="team">
+          <strong class="team-name">JB Crozet</strong>
+          <p class="team-designation">SVP, Advisory & Head of London Office</p>
+          <button class="btn btn-outline-secondary px-4 py-2" data-bs-toggle="modal" data-bs-target="#teamPopup">Know More</button>
+        </div>
+      </div>
+      <div class="team-wrapper">
+        <div class="team-card">
+          <img src="./img/team/person-5.svg" class="team-img" alt="team">
+          <strong class="team-name">Brian Desmond</strong>
+          <p class="team-designation">CSO/EVP, Head of Fund Services</p>
+          <button class="btn btn-outline-secondary px-4 py-2" data-bs-toggle="modal" data-bs-target="#teamPopup">Know More</button>
+        </div>
+        <div class="team-card mt-5">
+          <img src="./img/team/person-6.svg" class="team-img" alt="team">
+          <strong class="team-name">Rodney Davies</strong>
+          <p class="team-designation">Chief Technology Officer</p>
+          <button class="btn btn-outline-secondary px-4 py-2" data-bs-toggle="modal" data-bs-target="#teamPopup">Know More</button>
+        </div>
+      </div>
+      <div class="team-wrapper">
+        <div class="team-card">
+          <img src="./img/team/person-7.svg" class="team-img" alt="team">
+          <strong class="team-name">Jane Lewis</strong>
+          <p class="team-designation">Compliance/Reporting Officer</p>
+          <button class="btn btn-outline-secondary px-4 py-2" data-bs-toggle="modal" data-bs-target="#teamPopup">Know More</button>
+        </div>
+        <div class="team-card mt-5">
+          <img src="./img/team/person-8.svg" class="team-img" alt="team">
+          <strong class="team-name">Susie Tindall</strong>
+          <p class="team-designation">Head of Corporate Services</p>
+          <button class="btn btn-outline-secondary px-4 py-2" data-bs-toggle="modal" data-bs-target="#teamPopup">Know More</button>
+        </div>
+      </div>
+      <div class="team-wrapper">
+        <div class="team-card">
+          <img src="./img/team/person-9.svg" class="team-img" alt="team">
+          <strong class="team-name">Paula Cox</strong>
+          <p class="team-designation">General Counsel</p>
+          <button class="btn btn-outline-secondary px-4 py-2" data-bs-toggle="modal" data-bs-target="#teamPopup">Know More</button>
+        </div>
+        <div class="team-card mt-5">
+          <img src="./img/team/person-10.svg" class="team-img" alt="team">
+          <strong class="team-name">Lola Myshketa</strong>
+          <p class="team-designation">Chief Business Development Officer</p>
+          <button class="btn btn-outline-secondary px-4 py-2" data-bs-toggle="modal" data-bs-target="#teamPopup">Know More</button>
+        </div>
+      </div>
+      <div class="team-wrapper">
+        <div class="team-card">
+          <img src="./img/team/person-11.svg" class="team-img" alt="team">
+          <strong class="team-name">LaMel Burch</strong>
+          <p class="team-designation">Finance & Operations Director</p>
+          <button class="btn btn-outline-secondary px-4 py-2" data-bs-toggle="modal" data-bs-target="#teamPopup">Know More</button>
+        </div>
+        <div class="team-card mt-5">
+          <img src="./img/team/person-12.svg" class="team-img" alt="team">
+          <strong class="team-name">Fred LeMoine</strong>
+          <p class="team-designation">Insurance Management Director</p>
+          <button class="btn btn-outline-secondary px-4 py-2" data-bs-toggle="modal" data-bs-target="#teamPopup">Know More</button>
+        </div>
+      </div>
+      <div class="team-wrapper">
+        <div class="team-card">
+          <img src="./img/team/person-1.svg" class="team-img" alt="team">
+          <strong class="team-name">LaMel Burch</strong>
+          <p class="team-designation">Finance & Operations Director</p>
+          <button class="btn btn-outline-secondary px-4 py-2" data-bs-toggle="modal" data-bs-target="#teamPopup">Know More</button>
+        </div>
+        <div class="team-card mt-5">
+          <img src="./img/team/person-2.svg" class="team-img" alt="team">
+          <strong class="team-name">Fred LeMoine</strong>
+          <p class="team-designation">Insurance Management Director</p>
+          <button class="btn btn-outline-secondary px-4 py-2" data-bs-toggle="modal" data-bs-target="#teamPopup">Know More</button>
+        </div>
+      </div>
+      <div class="team-wrapper">
+        <div class="team-card">
+          <img src="./img/team/person-3.svg" class="team-img" alt="team">
+          <strong class="team-name">LaMel Burch</strong>
+          <p class="team-designation">Finance & Operations Director</p>
+          <button class="btn btn-outline-secondary px-4 py-2" data-bs-toggle="modal" data-bs-target="#teamPopup">Know More</button>
+        </div>
+        <div class="team-card mt-5">
+          <img src="./img/team/person-4.svg" class="team-img" alt="team">
+          <strong class="team-name">Fred LeMoine</strong>
+          <p class="team-designation">Insurance Management Director</p>
+          <button class="btn btn-outline-secondary px-4 py-2" data-bs-toggle="modal" data-bs-target="#teamPopup">Know More</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+  <div class="modal fade" id="teamPopup" tabindex="-1" aria-labelledby="teamPopupLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <div class="about-person p-4 p-md-5" id="personDetails">
+            <img src="./img/team/person-2.svg" class="team-img" id="personImg" alt="person">
+            <strong class="team-name d-block" id="personName">Fred LeMoine</strong>
+            <p class="team-desg" id="personDes">Chairman & CEO</p>
+            <div class="d-flex align-center gap-3 py-4 justify-center">
+              <a href="#" class="social-icon fs-4 p-3"> <i class="fa-brands fa-x-twitter"></i> </a>
+              <a href="#" class="social-icon fs-4 p-3"> <i class="fa-brands fa-facebook-f"></i> </a>
+              <a href="#" class="social-icon fs-4 p-3"> <i class="fa-brands fa-instagram"></i> </a>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<section class="service-help">
+  <div class="container">
+    <div class="row justify-center">
+      <div class="col-md-8 col-lg-6 text-center">
+          <h2 class="mb-3 text-gradient fs-4">Partner with the Nascent Group and witness firsthand the transformative impact of our dedicated expertise and unwavering commitment to your success</h2>
+          <!-- <small class="text-muted">John Sample, CEO - Nascent Group</small>
+          <p class="my-4 text-dark">I want to form a Reinsurance Company</p> -->
+          <a href="./contact.html" class="btn btn-outline-secondary">Click here for help</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<div id="cookie-banner">
+  By using our website, you agree to our <a href="#">Cookie Policy</a>. 
+  <button onclick="acceptCookies()">Accept</button>
+</div>
+
+
+<footer class="footer-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 me-auto mb-5 mb-lg-0">
+        <div class="subcription-section">
+          <h4 class="subs-title" style="display: none;">SUBSCRIBLE TO THE <br>NASCENT GROUP NEWSLETTER</h4>
+          <form class="row gx-3 py-4 flex-nowrap align-items-center subs-form" style="display: none;">
+            <div class="col-auto flex-grow-1">
+              <label class="visually-hidden" for="subEmail">Name</label>
+              <input type="email" class="form-control rounded-pill p-3 bg-transparent text-white" id="subEmail" required placeholder="Your mail">
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-outline-light" id="subscrible">Subscrible</button>
+            </div>
+          </form>
+          <div class="footer-follow d-flex align-center text-white gap-3">
+            <a href="./" class="foot-link me-auto"><img src="./img/nascent-group-footer-logo.webp" alt="nascent-group-footer-logo" width="200" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-lg-3 text-white py-4 py-md-0">
+        <nav class="foot-nav">
+          <strong class="nav-title d-inline-block mb-3">Address</strong><br>
+          <strong class="add-country py-2 d-inline-block">Bermuda</strong>
+          <address class="add-line"> The Armoury Building 1st Floor 37 Reid Street Hamilton HM12 </address>
+          <a href="#" class="add-contact">+1 (441) 295 8478 </a>
+        </nav>
+      </div>
+      <div class="col-sm-4 col-lg-3 text-white py-4 py-md-0">
+        <nav class="foot-nav">
+          <strong class="nav-title d-inline-block mb-3">About Us</strong>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="./about-us.html#aboutUs-Top" class="nav-link">What We Do</a></li>
+            <li class="nav-item"><a href="./about-us.html#philosophy" class="nav-link">What We Think</a></li>
+            <li class="nav-item"><a href="./about-us.html#seniorManagement" class="nav-link">The Team</a></li>
+            <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-sm-4 col-lg-3 text-white py-4 py-md-0">
+        <nav class="foot-nav">
+          <strong class="nav-title d-inline-block mb-3">Join Our Team</strong>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="./contact.html" class="nav-link">Investors</a></li>
+            <li class="nav-item"><a href="./insurance-management.html" class="nav-link">Insurance Management</a></li>
+            <li class="nav-item"><a href="./advisory-services.html" class="nav-link">Advisory</a></li>
+            <li class="nav-item"><a href="./contact.html#locations" class="nav-link">Locations</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div> <!-- row -->
+    <hr>
+    <div class="d-flex flex-wrap flex-lg-nowrap foot-copyright text-white gap-3 text-center justify-center">
+      <span class="d-inline-block col-12 col-lg-auto">&copy; 2023 Nascent Group. All rights reserved</span>
+      <div class="mx-auto flex-grow-1 d-flex flex-wrap justify-content-center gap-3">
+        <a href="#" class="nav-link">Privacy Policy </a>
+        <a href="#" class="nav-link">Legal </a>
+        <a href="#" class="nav-link">Do Not Sell or Share My Personal Information </a>
+        <a href="javascript:showCookieBanner();" class="nav-link">Cookie Preferences </a>
+      </div>
+      <div class="flex-shrink-0">
+        <a href="https://www.h2co.io/ruddr" class="nav-link" target="_blank">Powered By H2Co</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+<!-- <script src="./js/jquery-3.7.1.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./slick/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+  
+document.addEventListener("DOMContentLoaded", function() {
+  var knowMoreButtons = document.querySelectorAll('button[data-bs-target="#teamPopup"]');
+  knowMoreButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+      var teamCard = button.closest('.team-card');
+      var nameElement = teamCard.querySelector('.team-name');
+      var designationElement = teamCard.querySelector('.team-designation');
+      var personImg = document.getElementById('personImg');
+      var personName = document.getElementById('personName');
+      var personDes = document.getElementById('personDes');
+      personImg.src = teamCard.querySelector('.team-img').src;
+      personName.textContent = nameElement.textContent;
+      personDes.textContent = designationElement.textContent;
+    });
+  });
+});
+
+$(document).on('ready', function() {
+  $(".team-slider").slick({
+    infinite: false,
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><i class="fa-solid fa-angle-left"></i></button>',
+    nextArrow: '<button class="slick-next" aria-label="Next" type="button"><i class="fa-solid fa-angle-right"></i></button>',
+    responsive: [
+    {
+      breakpoint: 1199,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    }
+  ]
+  });
+})
+</script>
+<script src="./js/Cookies.js"></script>
+
+
+</body>
+</html>

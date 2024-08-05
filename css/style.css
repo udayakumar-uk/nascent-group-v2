@@ -206,6 +206,13 @@ img{
 	border-bottom: 1px solid #ffffff30;
 	padding-block: 1rem;
 	display: block;
+	position: relative;
+
+	&.dropdown-toggle::after{
+		position: absolute;
+		right: 10px;
+		top: 28px;
+	}
 }
 .offcanvas .navbar-nav .nav-link.active, 
 .offcanvas .navbar-nav .nav-link:hover {
@@ -394,14 +401,14 @@ img{
 
 /* compliance-page */
 /* compliance-banner */
-.compliance-banner{
+/* .compliance-banner{
     padding: 10rem 0 15rem;
 	position: relative;
     background-image:  url(../img/compliance-advisory/compliance-banner-4.webp), url(../img/compliance-advisory/compliance-banner-2.svg), url(../img/compliance-advisory/compliance-banner-1.svg);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: right center, calc(50% + 100px) center, calc(50% - 100px) center;
     background-size: 40%, contain, contain ;
-}
+} */
 
 
 

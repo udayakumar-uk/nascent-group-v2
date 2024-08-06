@@ -14,6 +14,13 @@
 	overscroll-behavior: none;
   }
 
+.material-symbols-rounded {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 25px;
+}
+ 
 body, html{
 	font-family: "Red Hat Display", sans-serif;
 	font-optical-sizing: auto;
@@ -325,7 +332,7 @@ img{
 .ruddr-card{
 	height: 100%;
 	border-radius: 10px;
-    border: 1px solid #19A56E;
+    /* border: 1px solid #19A56E; */
     padding: 2rem;
     font-size: 1.4rem;
     /* font-weight: 500; */
@@ -440,14 +447,64 @@ img{
 }
 
 /*NacsentPage*/
-.nascent-banner{
+/* .nascent-banner{
     padding: 10rem 0 15rem;
 	position: relative;
     background-image:  url(../img/NascentRe-crop.png), url(../img/compliance-advisory/compliance-banner-2.svg), url(../img/compliance-advisory/compliance-banner-1.svg);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: right center, calc(50% + 100px) center, calc(50% - 100px) center;
     background-size: 40%, contain, contain ;
+} */
+
+
+.transformer-canva{
+	max-width: 500px;
+	margin: 0 auto;
+	border: 2px solid var(--darkblue);
+	border-radius: 10px;
+	position: relative;
+
+	& h2{
+		line-height: 2;
+		margin: 0;
+		padding: 5rem 3rem;
+	}
+	& .ils-content{
+		position: absolute;
+		left: 0;
+		right: 0;
+		text-align: center;
+		bottom: 0;
+		font-size: 1.3rem;
+	}
+	& > span:not(.arrow){
+		position: absolute;
+		top: 50%;
+		left: 0%;
+        transform: translate(-50%, -50%);
+		width: 160px;
+		background-color: var(--bs-white);
+		border: 2px solid var(--darkblue);
+		border-radius: 10px;
+		padding: 2rem 1rem;
+        font-weight: 600;
+	}
+	& > span.arrow{
+		position: absolute;
+		top: 50%;
+		left: 105px;
+        transform: translate(-50%, -50%);
+		font-size: 40px;
+	}
+	& > span.right-arrow{
+		left: calc(100% - 105px);
+	}
+	& .right-content{
+		left: 100% !important;
+	}
 }
+
+
 
 /* Insurance-page */
 .insurance-card .ruddr-card{
@@ -468,6 +525,7 @@ img{
     background: linear-gradient(318deg, rgba(53, 255, 42, 1) 10%, rgba(44, 231, 238, 1) 50%, rgba(233, 34, 218, 1) 80%); */
 	& img {
         border-radius: 50%;
+		border: 1px solid var(--green);
     }
 }
 
@@ -514,14 +572,16 @@ img{
 
 /* ourteam-section */
 .ourteam-section .team-img{
-	max-width: 150px;
+	max-width: 100px;
+	border-radius: 50%;
 	margin: 1rem auto;
+	border: 2px solid var(--green);
 }
 .ourteam-section .team-card{
 	color: var(--gray);
 }
 .ourteam-section .team-designation{
-	min-height: 50px;
+	min-height: 40px;
     font-size: 14px;
 }
 
@@ -744,6 +804,17 @@ footer hr{
 }
 @media only screen and (max-width: 767px) {
     
+	.transformer-canva{
+		max-width: 300px;
+		& h2{
+			font-size: 20px;
+		}
+		& > span:not(.arrow){
+			width: 150px;
+			padding: 2rem 0.5rem;
+		}
+	}
+
     /* .res-bg-767{
 		padding: 8rem 0 10rem;
 		background: none;

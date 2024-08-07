@@ -129,7 +129,7 @@ img{
 	border-width: 6px !important;
     font-weight: 600;
     font-size: 2rem;
-	display: inline-block;
+	/* display: inline-block; */
 }
 
 .border-green{
@@ -381,14 +381,14 @@ img{
 
 /* Advisory page */
 /* advisory-banner */
-.advisory-banner{
+/* .advisory-banner{
     padding: 10rem 0 15rem;
 	position: relative;
     background-image:url(../img/advisory-sevices/advisory-banner-4.webp), url(../img/advisory-sevices/advisory-banner-3.webp), url(../img/advisory-sevices/advisory-banner-1.svg), url(../img/advisory-sevices/advisory-banner-2.svg);
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: 5% 90%, 95% center, 40% center, calc(100% + 100px) center;
     background-size:300px, 200px, contain, contain;
-}
+} */
 .service-section{
 	padding-block: 6rem;
 	background: url('../img/advisory-sevices/advisory-bg.webp') no-repeat center/cover;
@@ -689,14 +689,14 @@ img{
 
 /* Contact us page */
 /* contact-banner */
-.contact-banner{
+/* .contact-banner{
     padding: 10rem 0;
 	position: relative;
     background-image: url(../img/contact/contact-banner-1.svg),  url(../img/contact/contact-banner-2.svg), url(../img/contact/contact-banner-3.svg);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 52% center, 48% center, 40% top;
     background-size: 400px, 400px, 70%;
-}
+} */
 
 .location-card {
     position: relative;
@@ -708,7 +708,7 @@ img{
 }
 
 .location-card:hover {
-    background: linear-gradient(#ffffff80, #ffffff80), url(../img/contact/gmap.webp) no-repeat center/cover;
+    background: linear-gradient(#ffffffb8, #ffffffb8), url(../img/contact/gmap.webp) no-repeat center/cover;
     border-color: #333;
 }
 
@@ -719,8 +719,30 @@ img{
 	left: 10px;
 	z-index: 1;
 } */
+.form-control, .form-select {
+    border-radius: 2px;
+    min-height: 42px;
+	box-shadow: none;
+}
+.form-select{
+	&:invalid{
+		color: var(--bs-gray-500) !important;
+	}
+	& option {
+		color: var(--bs-black) !important;
+		font-weight: 500;
 
+		&:first-child{
+			display: none;
+		}
+	}
+}
 
+.form-label{
+	text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+}
 
 
 

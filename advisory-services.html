@@ -24,7 +24,7 @@
   <header>
     <nav class="navbar fixed-top border-bottom bg-white">
       <div class="container-fluid flex-nowrap">
-        <div class="header--contact m-0 d-none d-sm-block" style="width: 200px;">
+        <div class="header--contact m-0 d-none d-sm-block">
           <a href="https://www.linkedin.com/company/nascent-management-and-advisory" class="p-2 fs-5" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
           <a href="mailto:daniel@nascentgroup.bm" class="p-2 fs-5"><i class="fa-solid fa-envelope"></i></a>
         </div>
@@ -32,12 +32,6 @@
             <a href="./" class="navbar-brand"><img src="./img/nascent-group-logo.webp" alt="nascent-group-logo" width="300" /></a>
         </div>
         
-        <div class="navbar-expand-lg navbar-expand-lg d-none d-lg-block">
-          <ul class="navbar-nav pe-3">
-            <li class="nav-item"><a class="nav-link" href="./about-us.html">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="./nascent.html">Reinsurance Solutions</a></li>
-          </ul>
-        </div>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-line"></span>
           <span class="navbar-line"></span>
@@ -49,12 +43,18 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body px-4 px-md-5">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
               <li class="nav-item"><a class="nav-link active" aria-current="page" href="./">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="./insurance-management.html">Insurance Management</a></li>
-              <li class="nav-item"><a class="nav-link" href="./advisory-services.html">Advisory Services</a></li>
-              <li class="nav-item"><a class="nav-link" href="./nascent.html">Nascent Re</a></li>
               <li class="nav-item"><a class="nav-link" href="./about-us.html">About Us</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./insurance-management.html">Insurance Management</a></li>
+                  <li><a class="dropdown-item" href="./nascent.html">Nascent Re</a></li>
+                  <li><a class="dropdown-item" href="./advisory-services.html">Advisory Services</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="./team.html">Team</a></li>
               <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
             </ul>
           </div>
@@ -67,43 +67,94 @@
 <section class="advisory-banner res-bg-767">
     <div class="container">
         <div class="row justify-center">
-            <div class="col-sm-10 col-md-8 col-lg-6 text-center text-white mb-4">
+            <div class="col-md-10 col-lg-8 text-center text-white mb-4">
                 <h1 class="mb-3">Advisory Services</h1>
-                <p>The Nascent Group offers a diverse array of services including actuarial, underwriting, claims, and general advice to insurers, reinsurers, investors, and captive entities.</p>
-                <p>Our skilled team, with backgrounds in high-level insurance industry management, has a wealth of experience in handling intricate projects.</p>
-                <p>We provide customized solutions that meet the unique requirements of each client, leveraging our extensive expertise in various aspects of insurance consulting.</p>
-                <a href="#meet-now" class="meet-now" style="left: auto; right: 15%; bottom: 5%;">MEET NOW <br> <i class="fa-solid fa-arrow-down"></i></a>
+                <p>Transform your business with The Nascent Group's suite of services, tailored to meet your every need. Specializing in compliance , licensing actuarial analysis, underwriting, claims, and strategic advisory, we cater to insurers, reinsurers, investors, and captive entities. Our solutions tackle your unique challenges with deep expertise, unparalleled customer service, and an innovative approach.</p>
+                <a href="#meet-now" class="meet-now">MEET NOW <br> <i class="fa-solid fa-arrow-down"></i></a>
             </div>
         </div>
     </div>
+    <img src="./img/home/line.svg" alt="line" class="gray-line">
 </section>
 
 
 <section class="service-section my-4">
     <div class="container">
         <div class="row justify-center">
-            <div class="col-md-8 col-lg-6 text-white">
+            <div class="col-md-10 col-lg-8 text-white">
                 <div class="advisory-content text-center pb-4">
-                    <strong>Services</strong>
-                    <h2 class="my-4">Advisory Services</h2>
-                    <p>We offer a cost-effective regulatory compliance consulting services and solutions so you can focus on your business requirements whilst we ensure you remain compliant.</p>
+                    <h2 class="my-4">Compliance Advisory</h2>
+                    <p>We offer a comprehensive suite of compliance services, ensuring your business adheres to legal standards and best practices, so you can grow with confidence. Our services are essential for maintaining high standards of regulatory compliance and operational integrity.</p>
                 </div>
-                <div class="row advisory-columns pt-4">
-                    <div class="col-md-6 pe-4 mb-5 mb-md-0">
-                        <h3 class="advisory-title border-top border-green">Compliance Advisory</h3>
-                        <p>We offer a comprehensive suite of compliance services, ensuring businesses adhere to legal standards and best practices. This suite of services is integral for companies aiming to maintain high standards of regulatory compliance and operational integrity.</p>
-                        <a href="./compliance-advisory.html" class="btn btn-outline-light">Read more</a>
-                    </div>
-                    <div class="col-md-6 pe-4">
-                        <h3 class="advisory-title border-top border-yellow">Re/Insurance Advisory</h3>
-                        <p>Our proficiency in underwriting combines broad-based business knowledge with detailed analysis of specific treaty exposures. We conduct thorough audits of underwriting practices and carefully examine reinsurance underwriting guidelines.</p>
-                        <a href="./re-insurance-advisory.html" class="btn btn-outline-light">Read more</a>
-                    </div>
+            </div>
+                
+            <div class="row advisory-columns text-white">
+                <div class="col-md-6 col-lg-4 mt-3">
+                    <h3 class="advisory-title border-top border-green">Drafting & Reviewing Policies & Procedures</h3>
+                    <p>Whether you need help updating existing policies and procedures for regulatory compliance or creating new ones to support your business operations and risk profile, we've got you covered.</p>
+                    <a href="./compliance-advisory.html" class="btn btn-outline-light">Read more</a>
+                </div>
+                <div class="col-md-6 col-lg-4 mt-3">
+                    <h3 class="advisory-title border-top border-yellow">AML Audits</h3>
+                    <p>Let us ensure your compliance with AML Audit annual requirements providing a comprehensive report that meets regulatory standards, allowing you to focus on your core business.</p>
+                    <a href="./re-insurance-advisory.html" class="btn btn-outline-light">Read more</a>
+                </div>
+                <div class="col-md-6 col-lg-4 mt-3">
+                    <h3 class="advisory-title border-top border-blue">AML Compliance Support</h3>
+                    <p>Whether you're preparing for a prudential on-site visit, need help with post-visit remediation points, or ensuring full compliance of your AML/ATF Manual, count on us as your trusted advisor.</p>
+                    <a href="./re-insurance-advisory.html" class="btn btn-outline-light">Read more</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
+<section class="tech-section my-3 my-md-5">
+  <div class="container">
+      <div class="row justify-center ">
+        <div class="col-md-10 col-lg-8">
+            <div class="advisory-content text-center pb-4">
+              <h2 class="my-4">RE/INSURANCE ADVISORY</h2>
+              <p>Our team of seasoned professionals brings extensive expertise in management, accounting, underwriting, claims, and actuarial services to support all aspects of insurance operations. With experience in traditional insurance, reinsurance, collateralized insurance, captives, and ILS sectors, we provide our clients with the knowledge and expertise needed to deliver tailored insurance services</p>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-4 m-auto insurance-card justify-center text-white text-center">
+        <div class="col-md-6 col-lg-4 ruddr-card-parent">
+          <div class="ruddr-card">
+            <strong class="ruddr-title text-white">Share Allocation Audit</strong>
+            <p class="mb-0">For ILS Fund Managers handling multiple funds, our independent evaluation service ensures alignment of bound share contract allocations in reinsurance with offering document specifications, benefiting both investors and managers.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 ruddr-card-parent">
+          <div class="ruddr-card">
+            <strong class="ruddr-title text-white">Risk Profile Audit</strong>
+            <p class="mb-0">For ILS Fund Managers with funds structured by specific risk or objective metrics, we provide independent analysis for both investors and managers. Such service ensures that Fund's composition aligns precisely with the guidelines set forth in the offering documents.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 ruddr-card-parent">
+          <div class="ruddr-card">
+            <strong class="ruddr-title text-white">Accounting Audits</strong>
+            <p class="mb-0">Leverage our expertise in evaluating clients' financial accounts and records to ensure precise representation based on specific criteria, while rigorously verifying compliance with established standards and policies.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 ruddr-card-parent">
+          <div class="ruddr-card">
+            <strong class="ruddr-title text-white">Company Start-Up Advice</strong>
+            <p class="mb-0">Looking to set up your business in Bermuda, Cayman, or other global locations? Our unbiased approach to jurisdictional preferences ensures tailored advice focused on your interests. Gain valuable insights into critical aspects of company formation.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 ruddr-card-parent">
+          <div class="ruddr-card">
+            <strong class="ruddr-title text-white">Financial Control Review & Design</strong>
+            <p class="mb-0">To optimize operational efficiency and minimize errors, we conduct meticulous reviews of financial controls and their design, cultivating confidence in your established processes and procedures, paving the way for sustainable growth.</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
 
 <div id="cookie-banner">
   By using our website, you agree to our <a href="#">Cookie Policy</a>. 
@@ -114,7 +165,7 @@
     <div class="container">
         <div class="row justify-center">
             <div class="col-md-8 col-lg-6 text-center">
-                <h2 class="mb-4">I want Advisory Services</h2>
+                <h2 class="mb-4">Partner with The Nascent Group for unmatched service, strategic insights, and the confidence of expert support</h2>
                 <a href="./contact.html" class="btn btn-outline-secondary">Click here for help</a>
             </div>
         </div>
@@ -126,7 +177,7 @@
 <footer class="footer-wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 me-auto mb-5 mb-lg-0">
+      <div class="col-lg-3 me-auto mb-5 mb-lg-0">
         <div class="subcription-section">
           <h4 class="subs-title" style="display: none;">SUBSCRIBLE TO THE <br>NASCENT GROUP NEWSLETTER</h4>
           <form class="row gx-3 py-4 flex-nowrap align-items-center subs-form" style="display: none;">
@@ -143,7 +194,7 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-4 col-lg-2 text-white py-4 py-md-0">
+      <div class="col-sm-4 col-lg-3 text-white py-4 py-md-0">
         <nav class="foot-nav">
           <strong class="nav-title d-inline-block mb-3">Address</strong><br>
           <strong class="add-country py-2 d-inline-block">Bermuda</strong>
@@ -151,7 +202,7 @@
           <a href="#" class="add-contact">+1 (441) 295 8478 </a>
         </nav>
       </div>
-      <div class="col-sm-4 col-lg-2 text-white py-4 py-md-0">
+      <div class="col-sm-4 col-lg-3 text-white py-4 py-md-0">
         <nav class="foot-nav">
           <strong class="nav-title d-inline-block mb-3">About Us</strong>
           <ul class="navbar-nav">
@@ -162,7 +213,7 @@
           </ul>
         </nav>
       </div>
-      <div class="col-sm-4 col-lg-2 text-white py-4 py-md-0">
+      <div class="col-sm-4 col-lg-3 text-white py-4 py-md-0">
         <nav class="foot-nav">
           <strong class="nav-title d-inline-block mb-3">Join Our Team</strong>
           <ul class="navbar-nav">
@@ -175,16 +226,16 @@
       </div>
     </div> <!-- row -->
     <hr>
-    <div class="d-flex flex-wrap foot-copyright text-white gap-3 text-center justify-center">
-      <span class="d-lg-inline-block col-12 col-lg-auto">&copy; 2023 Nascent Group. All rights reserved</span>
-      <div class="mx-auto custom-width ps-4">
-        <a href="#" class="me-3">Privacy Policy </a>
-        <a href="#" class="me-3">Legal </a>
-        <a href="#" class="me-3">Do Not Sell or Share My Personal Information </a>
-        <a style="cursor: pointer;" onclick="showCookieBanner()" class="me-3">Cookie Preferences </a>
+    <div class="d-flex flex-wrap flex-lg-nowrap foot-copyright text-white gap-3 text-center justify-center">
+      <span class="d-inline-block col-12 col-lg-auto">&copy; 2023 Nascent Group. All rights reserved</span>
+      <div class="mx-auto flex-grow-1 d-flex flex-wrap justify-content-center gap-3">
+        <a href="#" class="nav-link">Privacy Policy </a>
+        <a href="#" class="nav-link">Legal </a>
+        <a href="#" class="nav-link">Do Not Sell or Share My Personal Information </a>
+        <a href="javascript:showCookieBanner();" class="nav-link">Cookie Preferences </a>
       </div>
-      <div class="ms-auto">
-        <a href="https://www.h2co.io/ruddr" target="_blank">Powered By H2Co</a>
+      <div class="flex-shrink-0">
+        <a href="https://www.h2co.io/ruddr" class="nav-link" target="_blank">Powered By H2Co</a>
       </div>
     </div>
   </div>

@@ -24,7 +24,7 @@
   <header>
     <nav class="navbar fixed-top border-bottom bg-white">
       <div class="container-fluid flex-nowrap">
-        <div class="header--contact m-0 d-none d-sm-block" style="width: 200px;">
+        <div class="header--contact m-0 d-none d-sm-block">
           <a href="https://www.linkedin.com/company/nascent-management-and-advisory" class="p-2 fs-5" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
           <a href="mailto:daniel@nascentgroup.bm" class="p-2 fs-5"><i class="fa-solid fa-envelope"></i></a>
         </div>
@@ -32,12 +32,6 @@
             <a href="./" class="navbar-brand"><img src="./img/nascent-group-logo.webp" alt="nascent-group-logo" width="300" /></a>
         </div>
         
-        <div class="navbar-expand-lg navbar-expand-lg d-none d-lg-block">
-          <ul class="navbar-nav pe-3">
-            <li class="nav-item"><a class="nav-link" href="./about-us.html">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="./nascent.html">Reinsurance Solutions</a></li>
-          </ul>
-        </div>
         <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-line"></span>
           <span class="navbar-line"></span>
@@ -49,12 +43,18 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body px-4 px-md-5">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
               <li class="nav-item"><a class="nav-link active" aria-current="page" href="./">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="./insurance-management.html">Insurance Management</a></li>
-              <li class="nav-item"><a class="nav-link" href="./advisory-services.html">Advisory Services</a></li>
-              <li class="nav-item"><a class="nav-link" href="./nascent.html">Nascent Re</a></li>
               <li class="nav-item"><a class="nav-link" href="./about-us.html">About Us</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./insurance-management.html">Insurance Management</a></li>
+                  <li><a class="dropdown-item" href="./nascent.html">Nascent Re</a></li>
+                  <li><a class="dropdown-item" href="./advisory-services.html">Advisory Services</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="./team.html">Team</a></li>
               <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
             </ul>
           </div>
@@ -67,20 +67,21 @@
 <section class="compliance-banner res-bg-767">
     <div class="container">
         <div class="row justify-center">
-            <div class="col-sm-10 col-md-7 col-lg-5 text-center text-white mb-4">
+            <div class="col-sm-10 col-md-8 col-lg-6 text-center text-white mb-4">
                 <h1 class="mb-3">Compliance Advisory</h1>
                 <p>Nascent Group Compliance offers cost-effective regulatory compliance consulting services and solutions so you can focus on your business requirements whilst we ensure you remain compliant.</p>
                 <a href="#meet-now" class="meet-now gradient-green">MEET NOW <br> <i class="fa-solid fa-arrow-down"></i></a>
             </div>
         </div>
     </div>
+    <img src="./img/home/line.svg" alt="line" class="gray-line">
 </section>
 
 
 <section class="compliance-service my-4 gradient-green">
     <div class="container">
         <div class="compliance-content text-white pb-4 pb-md-5">
-            <h2 class="my-4 border-top border-darkblue">Services</h2>
+            <h2 class="my-4 border-top border-darkblue d-inline-block">Services</h2>
         </div>
         <div class="row compliance-card">
           <div class="col-sm-6 col-md-4 ruddr-card-parent text-white">
@@ -116,24 +117,20 @@
           <div class="col-sm-6 col-md-4 ruddr-card-parent text-white">
             <div class="ruddr-card">
               <strong class="ruddr-title">License Applications</strong>
-              <p class="ruddr-content">We will help guide you through the regulatory requirmenets and provide support and local knowledge to make this a smooth process.</p>
+              <p class="ruddr-content">We will help guide you through the regulatory requirements and provide support and local knowledge to make this a smooth process.</p>
             </div>
           </div>
         </div>
     </div>
 </section>
 
-<section class="service-section-withoutBG my-4">
+<section class="service-section-withoutBG">
   <div class="container">
-      <div class="row justify-content-center">
-          <div class="col-md-8 col-lg-6 text-black">
-              <div class="row advisory-columns pt-4 justify-content-center">
-                  <div class="col-md-6 pe-4 mb-5 mb-md-0">
-                      <h3 class="advisory-title border-top border-yellow">Re/Insurance Advisory</h3>
-                      <p>Our proficiency in underwriting combines broad-based business knowledge with detailed analysis of specific treaty exposures. We conduct thorough audits of underwriting practices and carefully examine reinsurance underwriting guidelines.</p>
-                      <a href="./re-insurance-advisory.html" class="btn btn-outline-secondary">Read more</a>
-                  </div>
-              </div>
+      <div class="row advisory-columns pt-4 justify-content-center">
+          <div class="col-md-4 col-sm-6 mb-5 mb-md-0">
+              <h3 class="advisory-title border-top border-yellow">Re/Insurance Advisory</h3>
+              <p>Our proficiency in underwriting combines broad-based business knowledge with detailed analysis of specific treaty exposures. We conduct thorough audits of underwriting practices and carefully examine reinsurance underwriting guidelines.</p>
+              <a href="./re-insurance-advisory.html" class="btn btn-outline-secondary">Read more</a>
           </div>
       </div>
   </div>

@@ -339,13 +339,15 @@ img{
     color: #bca9d5;
     align-items: center;
     display: flex;
-	justify-content: center;
 	min-height: 150px;
 	/* flex-wrap: wrap; */
 	flex-direction: column;
 	background: linear-gradient(143.7deg, #2C3A65 30%, #425BA3 162.8%),
 	linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
 	linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
+}
+.ruddr-card.justify-center{
+	justify-content: center;
 }
 
 .ruddr-card-parent{
@@ -427,7 +429,10 @@ img{
 }
 
 
-.compliance-card .ruddr-card, .insurance-card .ruddr-card{
+.compliance-card .ruddr-card{
+	align-items: start;
+}
+.insurance-card .ruddr-card{
 	/* align-items: start; */
 }
 .ruddr-title{
@@ -572,10 +577,10 @@ img{
 
 /* ourteam-section */
 .ourteam-section .team-img{
-	max-width: 100px;
+	max-width: 110px;
 	border-radius: 50%;
 	margin: 1rem auto;
-	border: 2px solid var(--green);
+	border: 10px solid var(--green);
 }
 .ourteam-section .team-card{
 	color: var(--gray);
@@ -637,7 +642,7 @@ img{
 }
 
 .slick-slide {
-  margin: 0px 20px;
+  margin: 0px 10px;
 }
 
 .slick-slide img {

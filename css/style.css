@@ -17,10 +17,19 @@
 .text-green{
 	color: var(--green);
 }
-
 .text-darkblue{
 	color: var(--darkblue);
 }
+.text-blue{
+	color: var(--blue);
+}
+.text-yellow{
+	color: var(--yellow);
+}
+.text-purple{
+	color: var(--purple);
+}
+
 .material-symbols-rounded {
     font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
     text-align: center;
@@ -338,16 +347,15 @@ img{
 }
 .ruddr-card{
 	height: 100%;
-	border-radius: 10px;
-    /* border: 1px solid #19A56E; */
+	border-radius: 5px;
     padding: 2rem;
     font-size: 1.2rem;
-    /* font-weight: 500; */
-    color: var(--darkblue);
+    color: var(--blue);
+	border: 1px solid var(--blue);
     align-items: center;
     display: flex;
 	min-height: 150px;
-	/* flex-wrap: wrap; */
+	border-top-width: 5px;
 	flex-direction: column;
 	background: #fff;
 	/* background: linear-gradient(143.7deg, #2C3A65 30%, #425BA3 162.8%),
@@ -433,20 +441,23 @@ img{
 
 
 .compliance-service, .insurace-service{
-    padding: 8rem 0;
+    padding: 6rem 0;
 }
 
 
 .compliance-card .ruddr-card{
 	align-items: start;
 }
+
+/* advisory-services.html */
 .insurance-card .ruddr-card{
-	/* align-items: start; */
+	align-items: start;
 }
+
 .ruddr-title{
-	color: var(--text-blue);
-	padding-bottom: 1rem;
-	font-weight: 500;
+	/* color: var(--text-blue);
+	padding-bottom: 1rem; */
+	font-weight: 700;
 }
 .ruddr-title-y{
 	color: var(--yellow);
@@ -456,7 +467,7 @@ img{
 .ruddr-content{
 	margin: 0;    
 	font-size: 1.1rem;
-    color: #fff;
+    /* color: #fff; */
 }
 
 /*NacsentPage*/
@@ -538,7 +549,7 @@ img{
     background: linear-gradient(318deg, rgba(53, 255, 42, 1) 10%, rgba(44, 231, 238, 1) 50%, rgba(233, 34, 218, 1) 80%); */
 	& img {
         border-radius: 50%;
-		border: 1px solid var(--green);
+		border: 10px solid var(--green);
     }
 }
 
@@ -557,7 +568,7 @@ img{
             display: block;
             width: 35px;
             height: 35px;
-            background: url(../img/list-icon.svg) no-repeat center / 100%;
+            background: url(../img/darkblue-tick.svg) no-repeat center / 100%;
         }
     }
 }

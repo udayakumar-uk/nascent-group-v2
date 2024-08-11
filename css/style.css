@@ -17,13 +17,20 @@
 .breadcrumb{
 	font-weight: 500;
     position: absolute;
-    left: 6rem;
+    left: 5.5rem;
     top: 20px;
 	font-weight: 500;
 	& a{
 		color: var(--bs-primary);
 	}
 }
+.breadcrumb-item+.breadcrumb-item{
+	padding-left: 5px;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+	padding-right: 5px;
+}
+
 .text-green{
 	color: var(--green);
 }
@@ -280,6 +287,9 @@ img{
 .navbar-toggler:hover > .navbar-line:nth-child(3){
 	width: 30px;
 }
+header .navbar-brand{
+	margin-right: 0;
+}
 
 
 
@@ -477,6 +487,7 @@ img{
 .ruddr-content{
 	margin: 0;    
 	font-size: 1.1rem;
+	padding-left: 1rem;
     /* color: #fff; */
 }
 
@@ -549,8 +560,8 @@ img{
 }
 
 .card .card-avatar{
-	width: 120px;
-    height: 120px;
+	width: 100px;
+    height: 100px;
     overflow: hidden;
     border-radius: 50%;
     margin: auto;
@@ -559,7 +570,7 @@ img{
     background: linear-gradient(318deg, rgba(53, 255, 42, 1) 10%, rgba(44, 231, 238, 1) 50%, rgba(233, 34, 218, 1) 80%); */
 	& img {
         border-radius: 50%;
-		border: 10px solid var(--green);
+		border: 2px solid var(--green);
     }
 }
 
@@ -619,7 +630,7 @@ img{
 	max-width: 100px;
 	border-radius: 50%;
 	margin: 1rem auto;
-	border: 4px solid var(--green);
+	border: 2px solid var(--green);
 }
 .ourteam-section .team-card{
 	color: var(--gray);
@@ -859,13 +870,17 @@ footer hr{
 	}
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 	.team--section{
 		padding-block: 5rem;
 		background: url('../img/home/team-background.webp') no-repeat top/cover;
 	}
 	.about-content{
 		background: none;
+	}
+	
+	.breadcrumb{
+		display: none;
 	}
 }
 @media only screen and (max-width: 767px) {

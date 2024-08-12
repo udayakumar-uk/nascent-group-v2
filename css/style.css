@@ -429,7 +429,7 @@ header .navbar-brand{
 } */
 .service-section{
 	padding-block: 6rem;
-	background: url('../img/advisory-sevices/advisory-bg.webp') no-repeat center/cover;
+	background: linear-gradient(0deg, #0000007a 50%, #0000007a 50%), url(../img/advisory-sevices/advisory-bg.webp) no-repeat center / cover;
 }
 .service-section-InsuranceManagement{
 	padding-block: 5rem;

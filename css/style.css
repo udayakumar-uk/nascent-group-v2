@@ -378,6 +378,7 @@ header .navbar-brand{
 	border-top-width: 5px;
 	flex-direction: column;
 	background: #fff;
+	box-shadow: 0 2px 10px #00000036;
 	/* background: linear-gradient(143.7deg, #2C3A65 30%, #425BA3 162.8%),
 	linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
 	linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) */
@@ -739,8 +740,16 @@ header .navbar-brand{
 }
 
 
-
-
+.info-content{
+	& h4{
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+	& li, & p{
+		font-size: 1.1rem;
+		color: var(--bs-dark);
+	}
+}
 
 /* Contact us page */
 /* contact-banner */
